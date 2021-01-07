@@ -1,0 +1,154 @@
+body{
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container{
+    padding-top: 60px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+.header{
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+    
+}
+
+.info h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.info p{
+    max-width: calc(1440px/2);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+}
+.card{
+    height: 250px;
+    width: 25%;
+    padding: 20px;
+    padding-right: 30px;
+    box-shadow: 0 0 8px 2px #ccc;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.card-1{
+    border-top: 3px solid hsl(180, 62%, 55%);
+    transform: translateY(50%);
+    
+}
+
+.card-2{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card-3{
+    border-top: 3px solid hsl(212, 86%, 64%);
+    transform: translateY(50%);
+}
+
+.card-4{
+    border-top: 3px solid hsl(34, 97%, 64%);
+    
+    
+}
+
+
+h4{
+    margin: 0;
+}
+.card img{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.card p{
+    color: hsl(229, 6%, 66%);
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 30px;
+    }
+    .card-1{
+        transform: translateY(0%);
+        
+    }    
+    .card-3{
+        transform: translateY(0%);
+    }
+        
+    .card{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (min-width:601px) and (max-width: 845px){
+
+    .info p{
+        width: calc(845px/2);
+    }
+
+    .cards{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+
+   .card{
+    width: 42%;
+    }
+
+   .card-1{
+    transform: translateY(0%);
+    
+}    
+    .card-3{
+        transform: translateY(0%);
+}
+}
+
+@media only screen and (min-width:845px) and (max-width: 1075px){
+
+    .info p{
+        width: calc(1075px/2);
+    }
+
+    .card{
+        width: 33%;
+    }
+
+    .card-1{
+        transform: translateY(0%);
+        
+    }    
+    .card-3{
+        transform: translateY(0%);
+    }
+}

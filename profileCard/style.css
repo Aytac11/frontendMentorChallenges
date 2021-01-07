@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background: hsl(185, 75%, 39%);
+    background-image:url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-position:
+    top left, /* this positions the first image */
+    bottom right; /* this positions the second image */
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+.card-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    text-align: center;
+    border: 1px solid hsl(185, 75%, 39%);
+    border-radius: 10px;
+}
+
+.upper-container{
+    height: 150px;
+    background-image: url(images/bg-pattern-card.svg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.profile_photo {
+    width: 80px;
+    height: 80px;
+    padding:5px;
+    transform: translate(122px, 100px);
+}
+
+.profile_photo img{
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.lower-container{
+    background-color: white;
+    height: 250px;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.lower-container h4{
+    margin-top: 80px;
+    margin-bottom: 2px;
+}
+
+#age{
+    color: hsl(227, 10%, 46%);
+}
+
+.lower-container p{
+    margin-top: 5px;
+    color: hsl(227, 10%, 46%);
+}
+
+.horizontal-rule{
+        border: none;
+        height: 1px;
+        background-color: hsl(227, 40%, 89%); 
+    
+}
+.footer{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p{
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 375px){
+    .card-container{
+        width: 280px;
+    }
+
+    .profile_photo{
+        transform: translate(87px, 100px);
+    }
+}
